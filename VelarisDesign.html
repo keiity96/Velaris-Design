@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="icons/velaris2.PNG">
+    <link rel="stylesheet" href="Style.css">
+    <title>Velaris Design</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="">Velaris Design</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+                 <ul class="nav-lista">
+                    <li><a href="#Inicio">INICIO</a></li>
+                    <li><a href="#Sobre">SOBRE</a></li>
+                    <li><a href="#Serviços">SERVIÇOS</a></li>
+                    <li><a href="#Contatos">CONTATOS</a></li>
+                </ul>
+        </nav>
+
+    </header>
+    <div id="body">
+        <section id="Inicio">
+    <div class="circle">
+       
+        <div class="logo2"></div>
+            <div class="text">
+                <p>Velaris Design - Iluminando Seu Projeto.</p>
+            
+
+        </div>
+   
+    </div>
+ </section>
+</div>
+        <main>
+            
+            <div id="progressBar"></div>
+            <div id="scrollPath"></div>
+
+
+            <section id="Sobre">
+                <div class="html-seo">
+                    <h1>QUEM SOMOS</h1>
+            <p>O que é a Velaris?<br><br>
+            
+                A Velaris Design é uma empresa de desenvolvimento de identidade visual, branding, sites e aplicativos, que ilumina o caminho de sucesso para nossos clientes.
+                Estamos sempre pensando à frente para criar o melhor para os nossos clientes. O nosso objetivo é ser referência no mercado, com inovação e flexibilidade, levando os nossos clientes ao alto patamar.
+                A nossa equipe preza pela igualdade e pelo respeito, valorizando o talento e a ética de cada integrante.
+               <br><br>
+
+
+                Nossa Equipe:<br>
+                <img src="img/Equipe.png" id="equipe">
+    </p>
+                </div> 
+            </section>
+            <section id="Serviços">
+
+    <div class="html-seo">                
+        <h1>SERVIÇOS</h1>
+        <div class="Conteudo-S1">
+        <div class="Conteudo-S"> 
+         <h2>Identidade Visual:</h2>
+          <p>É o conjunto de todos os aspectos visuais que acompanham um produto,
+               empresa ou serviço. É o que representa graficamente a sua empresa e
+                é um dos pontos principais para fazer os seus clientes lembrarem de você.</p>
+            </div>
+            <div class="Conteudo-S"> 
+            <h2>Site:</h2>
+            <p>O site é a principal forma de estabelecer um bom relacionamento com o consumidor e para se manter presente.</p>
+            </div>
+            <div class="Conteudo-S"> 
+            <h2>Branding: </h2>
+            <p>É a gestão da marca de uma empresa, tais como seu nome, as imagens ou ideias a ela associadas, 
+            incluindo slogans, símbolos, logotipos e outros elementos de identidade visual que a representam ou aos seus produtos e serviços.</p>
+                </div>
+                <div class="Conteudo-S"> 
+            <h2>Desenvolvimento de aplicativo:</h2>
+            <p> É o processo de elaboração de um programa que será usado em um dispositivo móvel. Para isso, são empregadas linguagens de programação 
+                 que variam conforme as plataformas nas quais o seu app estará disponível.</p>
+                </div>
+    </div>
+    
+                <div class="col">
+                    <div class="card card1">
+                        <h5>Agenda</h5>
+                    </div>
+                    <div class="card card2">
+                        <h5>Pasta</h5>
+
+                    </div>
+                    <div class="card card3">
+                        <h5>Timbrado</h5>
+                    </div>
+                    <div class="card card4">
+                        <h5>Eco-Bag</h5>
+                    </div>
+                    <div class="card card5">
+                        <h5>Sacola</h5>
+                    </div>
+                    <div class="card card6">
+                        <h5>Caneca</h5>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="Contatos">
+                <div class="html-seo">                
+                    <h1>CONTATO</h1>
+                </div>
+               <div class="container">
+                   <div class="contato-box">
+                       <div class="esquerda"></div>
+                       <div class="direita">
+                           <h2>CONTATO</h2>
+                           <input type="text" class="field" placeholder="Seu Nome">
+                           <input type="email" class="field" placeholder="Seu Email">
+                           <textarea class="field area" placeholder="Mensagem"></textarea>
+                            <button class="btn">Enviar</button>
+
+                       </div>
+                   </div>
+               </div>
+            </section>
+        </main>
+    </div>
+        <footer>
+            <div class="footer-content">
+                <img src="img/Velaris Design Logo.PNG" class="ImgR">
+                
+                <p>São Paulo/SP</p>
+                    <ul class="socials">
+                        <li><a href="#"><img src="icons/facebook.svg"></a></li>
+                        <li><a href="#"><img src="icons/twitter.svg"></a></li>
+                        <li><a href="#"><img src="icons/google.svg"></a></li>
+                        <li><a href="#"><img src="icons/youtube.svg"></a></li>
+                        <li><a href="#"><img src="icons/linkedin.svg"></a></li>
+
+                    </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2021 copyright - Velaris Design <br><span> FATEC Carapicuíba </span> </p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+                let progress = document.getElementById('progressBar');
+                let totalHeight = document.body.scrollHeight -
+                window.innerHeight;
+                window.onscroll = function(){
+                    let progressHeight = (window.pageYOffset / 
+                    totalHeight) * 100;
+                    progress.style.height = progressHeight + "%";
+                }
+                const text = document.querySelector('.text p');
+                text.innerHTML = text.innerText.split("").map(
+                (char, i) =>
+                `<span style="transform:rotate(${i * 8.2}deg)">${char}</span>`
+            ).join("")
+        
+        </script>
+    <script src="mobile-bar.js"></script>
+    <script src="splitting.js"></script>
+    <script> Splitting(); </script>
+    
+</body>
+</html>
