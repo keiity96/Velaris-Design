@@ -525,7 +525,11 @@ width: 100%;
         height:200px;
     }
     .col{
-        padding:  0%;
+     
+        grid-template-columns: revert;
+    }
+    .container{
+        padding: 0;
     }
 }
 /*===============================Footer===================================*/
